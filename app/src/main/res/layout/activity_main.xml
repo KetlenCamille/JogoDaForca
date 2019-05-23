@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="horizontal"
+       android:layout_weight="1">
+
+       <ImageView
+           android:id="@+id/imgForca"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="@android:color/white"
+           android:src="@drawable/image1"/>
+
+       <TextView
+           android:id="@+id/txtLetrasErradas"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:textSize="32sp"
+           android:gravity="center"
+           android:textStyle="bold"
+           android:background="#e6e6e6"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtLetra"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:hint="Insira uma Letra"
+            android:textSize="32sp"
+            android:background="@android:color/white"/>
+        <!-- android:maxLength Define a quantidade de caracteres que pode ser inserido -->
+        <Button
+            android:id="@+id/btnVerificar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="VERIFICAR"
+            android:textSize="32sp"
+            android:padding="16dp"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/txtPalavra"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="32sp"
+            android:gravity="center"
+            android:background="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
